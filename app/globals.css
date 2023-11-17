@@ -1,27 +1,96 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.purple-text {
+color: #6E07F3;
+}
+.purple-background {
+  background-color: #6E07F3;
+}
+.purple-border {
+  border-color: #6E07F3;
+}
+
+.green-text {
+  color: #5be9b9;
   }
+  .green-background {
+    background-color: #5be9b9;
+  }
+  .green-border {
+    background-color: #5be9b9;
+  }
+  .max-container {
+    @apply mx-auto max-w-[1440px]
+  }
+  
+  .padding-container {
+    @apply px-[12px] lg:px-[20px]
+  }
+
+  .heading1 {
+    @apply text-[32px] lg:text-[45px];
+    font-weight: 700;
+  }
+.heading2 {
+  @apply text-[23px] lg:text-[35px];
+  font-weight: 600;
+}
+.heading3 {
+  @apply text-[23px] lg:text-[26px];
+  font-weight: 600;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  .paragraph {
+    @apply text-[17px] lg:text-[20px]
+  }
+
+  .button-style {
+    border: 1px solid;
+    font-size: 19px;
+    padding: 6px 20px 6px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+/*
+className=' hover:duration-300 ease-in-out'>;
+*/
+  .button-white {
+cursor: pointer;
+color: #6E07F3;
+font-size: 19px;
+padding: 6px 20px;
+@apply rounded-3xl;
+border: 1px solid #6E07F3;
+background-color: white;
+  }
+  .button-white:hover {
+    animation-duration: 300;
+    color: white;
+    background-color: #6E07F3;
+    @apply hover:duration-300 ease-in-out;
+  }
+
+  .button-purple {
+    cursor: pointer;
+    color: white;
+    font-size: 19px;
+    padding: 6px 20px;
+    @apply rounded-3xl;
+    border: 1px solid white;
+    background-color: #6E07F3;
+      }
+      .button-purple:hover {
+        animation-duration: 300;
+        color: #6E07F3;
+        background-color: white;
+        @apply hover:duration-300 ease-in-out;
+      }
+    
