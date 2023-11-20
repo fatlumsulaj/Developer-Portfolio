@@ -44,12 +44,20 @@ color: #6E07F3;
   font-weight: 600;
 }
 .heading3 {
-  @apply text-[23px] lg:text-[26px];
+  @apply text-[22px] lg:text-[25px];
   font-weight: 600;
 }
 
+.heading4 {
+  @apply text-[21px] lg:text-[24px];
+  font-weight: 600;
+}
   .paragraph {
-    @apply text-[17px] lg:text-[20px]
+    @apply text-[17px] lg:text-[19px]
+  }
+
+  .paragraph-sm {
+    @apply text-[16px] lg:text-[18px]
   }
 
   .button-style {
