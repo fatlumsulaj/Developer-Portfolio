@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { BarChart4 } from "lucide-react";
+import { BarChart4, UtensilsCrossed, Code2, Shovel, PencilRuler, PieChart, TrafficCone } from "lucide-react";
 import { nunito } from "@/app/ui/fonts";
 import { ExternalLink } from "lucide-react";
 type ProjectStats = {
@@ -9,23 +9,32 @@ type ProjectStats = {
   title: string;
   linkText: string;
   bgColor: string;
+  headingC: string;
   children: React.ReactNode;
 };
 
-const Project = ({ link, linkText, text, title, bgColor, children }: ProjectStats) => {
+type headingColor = {
+  color: string;
+}
+
+const Project = ({ link, linkText, text, title, bgColor, headingC, children }: ProjectStats) => {
   const dynamicStyles = {
     backgroundColor: bgColor || 'transparent',
   };
 
+const headingColor: headingColor= {
+  color: headingC || "black",
+}
+
   return (
-    <div className={`max-w-[400px] h-[280px] py-10 px-2 text-center text-white flex flex-col justify-evenly rounded-xl shadow-md`} style={dynamicStyles}>
+    <div className={`max-w-[450px] h-[280px] py-8 px-12 text-center text-black flex flex-col justify-evenly rounded-xl shadow-md border-gray-300 border-opacity-50 border-[1px]`} style={dynamicStyles}>
       <div className="flex flex-row justify-center items-center gap-1">
         {children}
-        <h4 className="heading4">{title}</h4>
+        <h4 className={`heading4`} style={headingColor}>{title}</h4>
       </div>
       <p className="paragraph-sm">{text}</p>
-      <div className="flex flex-row justify-center items-center gap-1">
-      <ExternalLink/><Link href={link}>{linkText}</Link>
+      <div className="flex flex-row justify-center items-center gap-1 bg-[#ebf5ff] w-fit mx-auto px-3 py-1 text-[16px]">
+      <ExternalLink width={18} color="#0068db"/><Link href={link} className="text-[#0068db]">{linkText}</Link>
       </div>
     </div>
   );
@@ -34,7 +43,7 @@ const Project = ({ link, linkText, text, title, bgColor, children }: ProjectStat
 
 const Projects = () => {
   return (
-    <section className={`max-container padding-container ${nunito.className} text-center my-24`}>
+    <section id="projects" className={`max-container padding-container ${nunito.className} text-center my-32`}>
       <h2 className="heading2">Meine aktuellen Arbeiten</h2>
       <p className="paragraph">
         Hier sind ein paar Designprojekte, an denen ich in der Vergangenheit
@@ -42,58 +51,64 @@ const Projects = () => {
       </p>
       <div className="flex flex-wrap justify-center flex-row gap-6 mt-12">
         <Project
-          link="/about"
-          text="Website für ein Digital-Marketing Unternehmen - Online Strategien revolutionieren"
-          title="DM Agency"
-          linkText="digital-marketing"
-          bgColor="#213f71"
+          link="https://www.inoweb.pro/de"
+          text="Website für ein Web-Entwicklung & SEO Unternehmen - Wo Webentwicklung auf Innovation trifft"
+          title="INOWEB"
+          linkText="inoweb.pro"
+          bgColor="white"
+          headingC="#213f71"
         >
-          <BarChart4 />
+          <Code2 color="#213f71"/>
+        </Project>
+        <Project
+          link="/about"
+          text="Website für ein Speiserestaurant - Köstliche, Speisekarte, einladende Atmosphäre"
+          title="Gericht"
+          linkText="restaurant-website"
+          bgColor="white"
+          headingC="#19a0a5"
+        >
+         <UtensilsCrossed color="#19a0a5"/>
+        </Project>
+        <Project
+          link="/about"
+          text="Eine Website für ein Bauunternehmen, die Träume von Grund auf zu verwiklichen"
+          title="Constructer"
+          linkText="constructer-website"
+          bgColor="white"
+          headingC="#4965d6"
+        >
+          <Shovel color="#4965d6"/>
+        </Project>
+        <Project
+          link="/about"
+          text="Eine Website für ein Architektbüro, wo innovative Designs zum Leben erweckt werden"
+          title="Architect"
+          linkText="architect-website"
+          bgColor="white"
+          headingC="#36393d"
+        >
+          <PencilRuler color="#36393d"/>
         </Project>
         <Project
           link="/about"
           text="Website für ein Digital-Marketing Unternehmen - Online Strategien revolutionieren"
           title="DM Agency"
           linkText="digital-marketing"
-          bgColor="#1aa6ab"
+          bgColor="white"
+          headingC="#cc5c4a"
         >
-          <BarChart4 />
+          <PieChart color="#cc5c4a"/>
         </Project>
         <Project
-          link="/about"
-          text="Website für ein Digital-Marketing Unternehmen - Online Strategien revolutionieren"
-          title="DM Agency"
-          linkText="digital-marketing"
-          bgColor="#4867d8"
+          link="/"
+          text="Das Projekt befindet sich im Aufbau und wird in naher Zukunft veröffentlicht"
+          title="Comming Soon"
+          linkText="soon..."
+          bgColor="white"
+          headingC="#266640"
         >
-          <BarChart4 />
-        </Project>
-        <Project
-          link="/about"
-          text="Website für ein Digital-Marketing Unternehmen - Online Strategien revolutionieren"
-          title="DM Agency"
-          linkText="digital-marketing"
-          bgColor="#36393d"
-        >
-          <BarChart4 />
-        </Project>
-        <Project
-          link="/about"
-          text="Website für ein Digital-Marketing Unternehmen - Online Strategien revolutionieren"
-          title="DM Agency"
-          linkText="digital-marketing"
-          bgColor="#cb5c49"
-        >
-          <BarChart4 />
-        </Project>
-        <Project
-          link="/about"
-          text="Website für ein Digital-Marketing Unternehmen - Online Strategien revolutionieren"
-          title="DM Agency"
-          linkText="digital-marketing"
-          bgColor="#286c45"
-        >
-          <BarChart4 />
+          <TrafficCone color="#266640"/>
         </Project>
       </div>
     </section>
