@@ -30,7 +30,7 @@ const headingColor: headingColor= {
     <div className={`max-w-[450px] h-[280px] py-8 px-12 text-center text-black flex flex-col justify-evenly rounded-xl shadow-md border-gray-300 border-opacity-50 border-[1px]`} style={dynamicStyles}>
       <div className="flex flex-row justify-center items-center gap-1">
         {children}
-        <h4 className={`heading4`} style={headingColor}>{title}</h4>
+        <h4 className={`heading4, font-semibold`} style={headingColor}>{title}</h4>
       </div>
       <p className="paragraph-sm">{text}</p>
       <div className="flex flex-row justify-center items-center gap-1 bg-[#ebf5ff] w-fit mx-auto px-3 py-1 text-[16px]">
