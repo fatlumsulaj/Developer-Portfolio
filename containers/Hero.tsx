@@ -11,8 +11,8 @@ const Hero = () => {
       </p>
       <Image
         src="/Fatlum-Sulaj.png"
-        width={200}
-        height={200}
+        width={300}
+        height={300}
         alt="Fatlum Sulaj"
         className="pt-12"
       />

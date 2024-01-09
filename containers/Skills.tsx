@@ -50,9 +50,6 @@ const Skills = () => {
           <p className="paragraph-sm">Joomla</p>
           <br />
           <div className="mt-10">
-            <Link className="button-white" href="/webdev">
-              Mehr Lesen
-            </Link>
           </div>
         </div>
       </Skill>
@@ -87,9 +84,6 @@ const Skills = () => {
             <p className="paragraph-sm">Pen & Paper</p>
             <br />
             <div className="mt-10">
-              <Link className="button-white" href="/designer">
-                Mehr Lesen
-              </Link>
             </div>
           </div>
         </div>
@@ -125,9 +119,6 @@ const Skills = () => {
           <p className="paragraph-sm">Semrush</p>
           <p className="paragraph-sm">Ahrefs</p>
           <div className="mt-10">
-            <Link className="button-white" href="/seo">
-              Mehr Lesen
-            </Link>
           </div>
         </div>
       </Skill>

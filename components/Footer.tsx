@@ -26,18 +26,18 @@ const Footer = () => {
         <div className="flex mt-5 flex-col gap-1 text-center">
           <p className="heading3 mb-2">Soziale Medien</p>
           <div className="flex flex-col gap-1 text-center">
+            <Link href="https://www.instagram.com/fatlum.sulaj/">
             <div className="flex gap-1 items-center mx-auto paragraph-sm">
               <Instagram width={20} />
               <p>fatlum.sulaj</p>
             </div>
-            <div className="flex gap-1 items-center mx-auto paragraph-sm">
-              <Facebook width={20} />
-              <p>Fatlum Sulaj</p>
-            </div>
+            </Link>
+            <Link href="https://de.linkedin.com/in/fatlum-sulaj-642581236">
             <div className="flex gap-1 items-center mx-auto paragraph-sm">
               <Linkedin width={20} />
               <p>Fatlum Sulaj</p>
             </div>
+            </Link>
             <div className="flex gap-1 items-center mx-auto paragraph-sm">
               <Mail width={20} />
               <p>fatlumsulaj@gmail.com</p>

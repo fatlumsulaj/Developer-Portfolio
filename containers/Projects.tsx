@@ -51,7 +51,7 @@ const Projects = () => {
       </p>
       <div className="flex flex-wrap justify-center flex-row gap-6 mt-12">
         <Project
-          link="https://www.inoweb.pro/de"
+          link="https://www.inoweb.pro"
           text="Website für ein Web-Entwicklung & SEO Unternehmen - Wo Webentwicklung auf Innovation trifft"
           title="INOWEB"
           linkText="inoweb.pro"
@@ -61,7 +61,7 @@ const Projects = () => {
           <Code2 color="#213f71"/>
         </Project>
         <Project
-          link="/about"
+          link="https://www.berisha-pflasterbau.de/"
           text="Website für ein Speiserestaurant - Köstliche, Speisekarte, einladende Atmosphäre"
           title="Gericht"
           linkText="restaurant-website"
@@ -71,7 +71,7 @@ const Projects = () => {
          <UtensilsCrossed color="#19a0a5"/>
         </Project>
         <Project
-          link="/about"
+          link="https://construction-website-fs.vercel.app/"
           text="Eine Website für ein Bauunternehmen, die Träume von Grund auf zu verwiklichen"
           title="Constructer"
           linkText="constructer-website"
@@ -81,7 +81,7 @@ const Projects = () => {
           <Shovel color="#4965d6"/>
         </Project>
         <Project
-          link="/about"
+          link="https://architect-website-fs.vercel.app/"
           text="Eine Website für ein Architektbüro, wo innovative Designs zum Leben erweckt werden"
           title="Architect"
           linkText="architect-website"
@@ -91,7 +91,7 @@ const Projects = () => {
           <PencilRuler color="#36393d"/>
         </Project>
         <Project
-          link="/about"
+          link="https://digital-marketing-website-fs.vercel.app/"
           text="Website für ein Digital-Marketing Unternehmen - Online Strategien revolutionieren"
           title="DM Agency"
           linkText="digital-marketing"
@@ -101,14 +101,14 @@ const Projects = () => {
           <PieChart color="#cc5c4a"/>
         </Project>
         <Project
-          link="/"
-          text="Das Projekt befindet sich im Aufbau und wird in naher Zukunft veröffentlicht"
-          title="Comming Soon"
-          linkText="soon..."
+          link="https://gericht-restaurant-fs.vercel.app/"
+          text="Website für ein Speiserestaurant - Köstliche, Speisekarte, einladende Atmosphäre"
+          title="Gericht"
+          linkText="restaurant-website"
           bgColor="white"
-          headingC="#266640"
+          headingC="#19a0a5"
         >
-          <TrafficCone color="#266640"/>
+         <UtensilsCrossed color="#19a0a5"/>
         </Project>
       </div>
     </section>
