@@ -17,7 +17,7 @@ const Skill = ({ children }: SkillProps) => {
 const Skills = () => {
   return (
     <section
-      className={`max-container container-padding flex flex-wrap justify-center border-0 2xl:border-[1px] border-gray-300 border-opacity-50 rounded-2xl mt-[-140px] shadow-md bg-white ${nunito.className}`}
+      className={`max-container container-padding flex flex-wrap justify-center border-0 2xl:border-[1px] border-gray-300 border-opacity-50 rounded-2xl mt-[-140px] shadow-md bg-white ${nunito.className}` } id="skills"
     >
       <Skill>
         <div className="flex flex-row items-center justify-center green-background p-5 rounded-full w-[75px] h-[75px] mx-auto mt-10 lg:mt-24">

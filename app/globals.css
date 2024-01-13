@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600&display=swap');
 * {
   margin: 0;
@@ -118,3 +119,15 @@ background-color: white;
             @apply hover:duration-300 ease-in-out;
           }
         
+
+.glass_contact_bg {
+  background: #6E07F3;
+  border-radius: 16px;
+  backdrop-filter: blur(17.1px);
+  -webkit-backdrop-filter: blur(17.1px);
+  border: 1px solid #6E07F3;
+}
+
+.contact_bg {
+  background-color: white
+}

@@ -1,9 +1,16 @@
+'use client'
 import React from "react";
 import Link from "next/link";
 import { Instagram, Facebook, Mail, Linkedin, Copyright } from "lucide-react";
+import { usePathname } from "next/navigation";
+
+
 const Footer = () => {
+  
+  const path = usePathname()
+
   return (
-    <footer className="text-white bg-[#6E07F3] pt-44 pb-10">
+    <footer className={`text-white bg-[#6E07F3] ${path === "/"? "pt-44":"pt-10"} pb-10`}>
       <div className="max-container padding-container flex flex-col md:flex-row flex-wrap justify-around items-center">
         <div className="flex flex-col flex-wrap justify-center gap-2 items-center">
           <Link href="/" className="text-[40px] lg:text-[65px]">
@@ -17,10 +24,10 @@ const Footer = () => {
         <div className="mt-5 text-center">
           <p className="heading3 mb-2">Navbar</p>
           <ul className="paragraph-sm flex flex-col gap-1">
-            <li>Home</li>
-            <li>Über mich</li>
-            <li>Fähigkeiten</li>
-            <li>Projekten</li>
+            <Link href="/"><li>Home</li></Link>
+            <Link href="/#aboutme"><li>Über mich</li></Link>
+            <Link href="/#skills"><li>Fähigkeiten</li></Link>
+            <Link href="/#projects"><li>Projekten</li></Link>
           </ul>
         </div>
         <div className="flex mt-5 flex-col gap-1 text-center">

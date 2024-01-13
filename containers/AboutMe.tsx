@@ -5,7 +5,7 @@ const AboutMe = () => {
   return (
     <section
       className={`bg-[#6E07F3] w-full ${nunito.className} pt-10 lg:pt-20 pb-[200px] 
-    `}
+    ` } id="aboutme"
     >
       <div className="max-container padding-container">
         <h2 className="heading2 text-center text-white pb-6">
