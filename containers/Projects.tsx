@@ -62,9 +62,9 @@ const Projects = () => {
         </Project>
         <Project
           link="https://www.berisha-pflasterbau.de/"
-          text="Website für ein Speiserestaurant - Köstliche, Speisekarte, einladende Atmosphäre"
-          title="Gericht"
-          linkText="restaurant-website"
+          text="Website für ein Pflasterbau / Garten- und Landschaftsbau Unternehmen"
+          title="Pflasterbau"
+          linkText="pflasterbau-website"
           bgColor="white"
           headingC="#19a0a5"
         >
