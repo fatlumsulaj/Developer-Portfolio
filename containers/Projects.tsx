@@ -1,115 +1,53 @@
 import React from "react";
 import Link from "next/link";
-import { BarChart4, UtensilsCrossed, Code2, Shovel, PencilRuler, PieChart, TrafficCone } from "lucide-react";
 import { nunito } from "@/app/ui/fonts";
 import { ExternalLink } from "lucide-react";
+
 type ProjectStats = {
-  link: string;
+  pname: string;
   text: string;
-  title: string;
+  link: string;
+  image: string;
   linkText: string;
-  bgColor: string;
-  headingC: string;
-  children: React.ReactNode;
-};
-
-type headingColor = {
-  color: string;
 }
 
-const Project = ({ link, linkText, text, title, bgColor, headingC, children }: ProjectStats) => {
-  const dynamicStyles = {
-    backgroundColor: bgColor || 'transparent',
-  };
-
-const headingColor: headingColor= {
-  color: headingC || "black",
-}
-
+const SingleProject = ({pname, text, link, linkText, image}: ProjectStats) => {
   return (
-    <div className={`max-w-[450px] h-[280px] py-8 px-12 text-center text-black flex flex-col justify-evenly rounded-xl shadow-md border-gray-300 border-opacity-50 border-[1px]`} style={dynamicStyles}>
-      <div className="flex flex-row justify-center items-center gap-1">
-        {children}
-        <h4 className={`heading4, font-semibold`} style={headingColor}>{title}</h4>
+    <div className="flex flex-wrap border-gray-400 border-[1px] rounded-2xl">
+      <div className="max-w-[888px] flex flex-col justify-center px-4 sm:px-10 py-5">
+        <h3 className="text-[26px] font-bold my-2">{pname}</h3>
+        <p className="paragraph">{text}</p>
+        <a href={link} className="text-[#6E07F3] font-bold text-[21px] mt-5">{linkText}</a>
       </div>
-      <p className="paragraph-sm">{text}</p>
-      <div className="flex flex-row justify-center items-center gap-1 bg-[#ebf5ff] w-fit mx-auto px-3 py-1 text-[16px]">
-      <ExternalLink width={18} color="#0068db"/><Link href={link} className="text-[#0068db]">{linkText}</Link>
-      </div>
+      <img src={image} alt="Fatlum Sulaj Project" className="w-auto md:max-w-[550px] bg-[#96eace] rounded-b-2xl sm:rounded-b-none sm:rounded-r-2xl"/>
     </div>
   );
 };
 
-
 const Projects = () => {
   return (
-    <section id="projects" className={`max-container padding-container ${nunito.className} text-center my-32`}>
-      <h2 className="heading2">Meine aktuellen Arbeiten</h2>
-      <p className="paragraph">
-        Hier sind ein paar Designprojekte, an denen ich in der Vergangenheit
-        gearbeitet habe. Möchten Sie mehr sehen? Schreiben Sie mir eine E-Mail.
+    <section className={`max-container my-20 ${nunito.className}`} id="projects">
+      <h2 className="heading2 text-center">Meine aktuellen Arbeiten</h2>
+      <p className="text-center paragraph mb-10">
+        Hier sind ein paar Projekte, an denen ich in der Vergangenheit
+        gearbeitet habe. Möchten Sie mehr sehen? Schreiben Sie mir einfach eine
+        E-Mail.
       </p>
-      <div className="flex flex-wrap justify-center flex-row gap-6 mt-12">
-        <Project
-          link="https://www.inoweb.pro"
-          text="Website für ein Web-Entwicklung & SEO Unternehmen - Wo Webentwicklung auf Innovation trifft"
-          title="INOWEB"
-          linkText="inoweb.pro"
-          bgColor="white"
-          headingC="#213f71"
-        >
-          <Code2 color="#213f71"/>
-        </Project>
-        <Project
-          link="https://www.berisha-pflasterbau.de/"
-          text="Website für ein Pflasterbau / Garten- und Landschaftsbau Unternehmen"
-          title="Pflasterbau"
-          linkText="pflasterbau-website"
-          bgColor="white"
-          headingC="#19a0a5"
-        >
-         <UtensilsCrossed color="#19a0a5"/>
-        </Project>
-        <Project
-          link="https://construction-website-fs.vercel.app/"
-          text="Eine Website für ein Bauunternehmen, die Träume von Grund auf zu verwiklichen"
-          title="Constructer"
-          linkText="constructer-website"
-          bgColor="white"
-          headingC="#4965d6"
-        >
-          <Shovel color="#4965d6"/>
-        </Project>
-        <Project
-          link="https://architect-website-fs.vercel.app/"
-          text="Eine Website für ein Architektbüro, wo innovative Designs zum Leben erweckt werden"
-          title="Architect"
-          linkText="architect-website"
-          bgColor="white"
-          headingC="#36393d"
-        >
-          <PencilRuler color="#36393d"/>
-        </Project>
-        <Project
-          link="https://digital-marketing-website-fs.vercel.app/"
-          text="Website für ein Digital-Marketing Unternehmen - Online Strategien revolutionieren"
-          title="DM Agency"
-          linkText="digital-marketing"
-          bgColor="white"
-          headingC="#cc5c4a"
-        >
-          <PieChart color="#cc5c4a"/>
-        </Project>
-        <Project
-          link="https://gericht-restaurant-fs.vercel.app/"
-          text="Website für ein Speiserestaurant - Köstliche, Speisekarte, einladende Atmosphäre"
-          title="Gericht"
-          linkText="restaurant-website"
-          bgColor="white"
-          headingC="#19a0a5"
-        >
-         <UtensilsCrossed color="#19a0a5"/>
-        </Project>
+
+      <div className="flex flex-wrap flex-col gap-6">
+        <SingleProject pname="Inoweb Agentur" text="Gemeinsam mit meinem Bruder haben wir unsere eigene Webentwicklungs- und SEO-Agentur gegründet. Es ist eines unserer bisher größten Projekte und bietet Inhalte in drei verschiedenen Sprachen an: Deutsch (Hauptsprache), Englisch und Albanisch." link="https://www.inoweb-agentur.de/" linkText="inoweb-agentur.de" image="/inowebproject.webp"/>
+
+        <SingleProject pname="Dream Design" text="Wir haben mit einem Architekturunternehmen aus dem Kosovo zusammengearbeitet, um eine maßgeschneiderte Website zu entwickeln, die auf ihre Geschäftsbedürfnisse zugeschnitten ist. Die Website verfügt über eine moderne Benutzeroberfläche und eine großartige Benutzererfahrung. Sie umfasst eine Startseite, eine Über uns-Seite, Dienstleistungen und Projekte, die das Unternehmen über das Sanity CMS verwaltet." link="https://www.dreamdesign-ks.com/" linkText="dreamdesign-ks.com" image="/dreamdesignproject.webp"/>
+
+        <SingleProject pname="BS Pflasterbau Meisterbetrieb" text="
+Wir haben eine professionelle Landingpage für ein Pflasterbauunternehmen in Passau, Deutschland, erstellt. Die Landingpage verfügt über ein modernes Design und zeigt die Erfahrung von Pflasterbau Berisha auf dem Gebiet durch seine Projekte, Dienstleistungen und die Über uns-Sektion. Sie enthält auch ein Kontaktformular und häufig gestellte Fragen." link="https://www.berisha-pflasterbau.de/" linkText="berisha-pflasterbau.de" image="/pflasterbauproject.webp"/>
+
+        <SingleProject pname="Beaute Infinie" text="Wir haben mit einem Nagelstudio in Frankreich zusammengearbeitet und eine multifunktionale Website erstellt. Von einer beeindruckenden Startseite über verschiedene Seiten für Dienstleistungen mit einem einzigartigen Design und Online-Buchungssystem unterstützt die Website das Unternehmen dabei, Kunden online zu finden und alles über die Website zu verwalten." link="https://beaute-infinie.vercel.app/" linkText="beaute-infinie.vercel.app" image="/beauteinfinieproject.png"/>
+
+        <SingleProject pname="Digital Marketing" text="Website-Vorlage mit einem einzigartigen Design und einer klaren Struktur, die erstellt wurde, um die Fähigkeiten im Design von Websites für die Branche zu präsentieren." link="https://digital-marketing-website-fs.vercel.app/" linkText="digital-marketing-website-fs.vercel.app" image="/digitalmarketingproject.png"/>
+
+        <SingleProject pname="Construction" text="Website-Vorlage mit einem einzigartigen Design und einer klaren Struktur, die erstellt wurde, um die Fähigkeiten im Design von Websites für die Branche zu präsentieren." link="https://construction-website-fs.vercel.app/" linkText="construction-website-fs.vercel.app" image="/constructionproject.png"/>
+
       </div>
     </section>
   );

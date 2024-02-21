@@ -8,7 +8,7 @@ const AboutMe = () => {
     ` } id="aboutme"
     >
       <div className="max-container padding-container">
-        <h2 className="heading2 text-center text-white pb-6">
+        <h2 className="heading2 text-left md:text-center text-white pb-5">
           Hallo, ich bin Fatlum Sulaj. Es freut mich, dich kennenzulernen.
         </h2>
         <p className="paragraph text-white max-w-[1000px] mx-auto">
