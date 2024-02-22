@@ -13,7 +13,7 @@ type ProjectStats = {
 
 const SingleProject = ({pname, text, link, linkText, image}: ProjectStats) => {
   return (
-    <div className="flex flex-wrap border-gray-400 border-[1px] rounded-2xl">
+    <div className="flex flex-wrap border-gray-400 border-opacity-50 shadow-md border-[1px] rounded-2xl">
       <div className="max-w-[888px] flex flex-col justify-center px-4 sm:px-10 py-5">
         <h3 className="text-[26px] font-bold my-2">{pname}</h3>
         <p className="paragraph">{text}</p>

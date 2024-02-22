@@ -21,7 +21,7 @@ const Footer = () => {
             ständigem Lernen
           </p>
         </div>
-        <div className="mt-5 text-center">
+        <div className="mt-5 left">
           <p className="heading3 mb-2">Navbar</p>
           <ul className="paragraph-sm flex flex-col gap-1">
             <Link href="/"><li>Home</li></Link>
@@ -30,7 +30,7 @@ const Footer = () => {
             <Link href="/#projects"><li>Projekten</li></Link>
           </ul>
         </div>
-        <div className="flex mt-5 flex-col gap-1 text-center">
+        <div className="flex mt-5 flex-col gap-1 text-left">
           <p className="heading3 mb-2">Soziale Medien</p>
           <div className="flex flex-col gap-1 text-center">
             <Link href="https://www.instagram.com/fatlum.sulaj/">
@@ -57,7 +57,7 @@ const Footer = () => {
         <p>|</p>
         <p>Fatlum Sulaj</p>
         <Copyright />
-        <p>2023</p>
+        <p>2024</p>
       </div>
     </footer>
   );

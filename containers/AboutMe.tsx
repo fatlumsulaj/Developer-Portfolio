@@ -5,7 +5,8 @@ const AboutMe = () => {
   return (
     <section
       className={`bg-[#6E07F3] w-full ${nunito.className} pt-10 lg:pt-20 pb-[200px] 
-    ` } id="aboutme"
+    `}
+      id="aboutme"
     >
       <div className="max-container padding-container">
         <h2 className="heading2 text-left md:text-center text-white pb-5">
@@ -13,9 +14,9 @@ const AboutMe = () => {
         </h2>
         <p className="paragraph text-white max-w-[1000px] mx-auto">
           Als erfahrener Webentwickler und SEO-Experte in Passau, Deutschland,
-          widme ich mich mit Leidenschaft der Schaffung beeindruckender
-          Benutzererlebnisse. Mein ausgeprägtes Auge für Details und meine
-          Fähigkeit, komplexe Probleme zu lösen, machen mich zu einem
+          setze ich meine Leidenschaft dafür ein, beeindruckende
+          Benutzererlebnisse zu schaffen. Mein ausgeprägtes Auge für Details und
+          meine Fähigkeit, komplexe Probleme zu lösen, machen mich zu einem
           zuverlässigen Partner für anspruchsvolle Projekte. In enger
           Zusammenarbeit mit positiv eingestellten Teams stehe ich bereit, meine
           Expertise in HTML, CSS, JavaScript sowie Tools wie Tailwind, Sass,
