@@ -4,7 +4,7 @@ import { nunito } from "@/app/ui/fonts";
 const AboutMe = () => {
   return (
     <section
-      className={`bg-[#6E07F3] w-full ${nunito.className} pt-10 lg:pt-20 pb-[200px] 
+      className={`bg-[#6E07F3] w-full ${nunito.className} pt-10 lg:pt-16 pb-[200px] 
     `}
       id="aboutme"
     >
