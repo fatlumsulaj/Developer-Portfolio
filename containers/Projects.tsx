@@ -59,8 +59,8 @@ const Projects = () => {
         />
 
         <SingleProject
-          pname="Dream Design"
-          text="Wir haben mit einem Architekturunternehmen aus dem Kosovo zusammengearbeitet, um eine maßgeschneiderte Website zu entwickeln, die auf ihre Geschäftsbedürfnisse zugeschnitten ist. Die Website verfügt über eine moderne Benutzeroberfläche und eine großartige Benutzererfahrung. Sie umfasst eine Startseite, eine Über uns-Seite, Dienstleistungen und Projekte, die das Unternehmen über das Sanity CMS verwaltet."
+          pname="Malaj Dienstleistungen"
+          text="Wir haben mit einem Gartenbau aus dem Kosovo zusammengearbeitet, um eine maßgeschneiderte Website zu entwickeln, die auf ihre Geschäftsbedürfnisse zugeschnitten ist. Die Website verfügt über eine moderne Benutzeroberfläche und eine großartige Benutzererfahrung. Sie umfasst eine Startseite, eine Über uns-Seite, Dienstleistungen und Projekte, die das Unternehmen über das Sanity CMS verwaltet."
           link="https://www.dreamdesign-ks.com/"
           linkText="dreamdesign-ks.com"
           image="/dreamdesignproject.webp"
@@ -89,14 +89,6 @@ Wir haben eine professionelle Landingpage für ein Pflasterbauunternehmen in Pas
           link="https://digital-marketing-website-fs.vercel.app/"
           linkText="digital-marketing-website-fs.vercel.app"
           image="/digitalmarketingproject.png"
-        />
-
-        <SingleProject
-          pname="Construction"
-          text="Website-Vorlage mit einem einzigartigen Design und einer klaren Struktur, die erstellt wurde, um die Fähigkeiten im Design von Websites für die Branche zu präsentieren."
-          link="https://construction-website-fs.vercel.app/"
-          linkText="construction-website-fs.vercel.app"
-          image="/constructionproject.png"
         />
       </div>
     </section>
