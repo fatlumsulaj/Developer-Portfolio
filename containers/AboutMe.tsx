@@ -4,42 +4,29 @@ import { nunito } from "@/app/ui/fonts";
 const AboutMe = () => {
   return (
     <section
-      className={`bg-[#6E07F3] w-full ${nunito.className} pt-10 lg:pt-16 pb-[200px] 
+      className={`bg-[#6E07F3] w-full ${nunito.className} pt-14 lg:pt-24 pb-[200px] md:pb-[250px] 
     `}
       id="aboutme"
     >
       <div className="max-container padding-container">
-        <h2 className="heading2 text-left md:text-center text-white pb-5">
-          Hallo, ich bin Fatlum Sulaj. Es freut mich, dich kennenzulernen.
+        <h2 className="heading2 text-center text-white pb-5">
+          Hi, ich bin Fatlum. Schön, dich kennenzulernen.
         </h2>
-        <p className="paragraph text-white max-w-[1000px] mx-auto">
-          Als erfahrener Webentwickler und SEO-Experte in Passau, Deutschland,
-          setze ich meine Leidenschaft dafür ein, beeindruckende
-          Benutzererlebnisse zu schaffen. Mein ausgeprägtes Auge für Details und
-          meine Fähigkeit, komplexe Probleme zu lösen, machen mich zu einem
-          zuverlässigen Partner für anspruchsvolle Projekte. In enger
-          Zusammenarbeit mit positiv eingestellten Teams stehe ich bereit, meine
-          Expertise in HTML, CSS, JavaScript sowie Tools wie Tailwind, Sass,
-          React, Next JS, Typescript, Bootstrap und Git einzusetzen.
-          <br />
-          <br />
-          Als Webentwickler in Passau setze ich mich dafür ein, herausragende
-          Websites zu erstellen und das Ranking durch effektive
-          Suchmaschinenoptimierung zu verbessern. Durch meine umfangreiche
-          Erfahrung in der Frontend-Entwicklung gelingt es mir nicht nur,
-          qualitativ hochwertige Webanwendungen zu erstellen, sondern sie auch
-          gezielt für Suchmaschinen zu optimieren, um maximale Sichtbarkeit und
-          ein verbessertes Ranking zu gewährleisten. Mein Ziel ist es,
-          innovative und intuitive Lösungen zu entwickeln, die das
-          Nutzererlebnis auf eine neue Ebene heben.
-          <br />
-          <br />
+        <p className="paragraph text-white max-w-[1000px] mx-auto text-center">
+          Seit ich vor 3 Jahren als Webentwickler begonnen habe, habe ich
+          Websites für Kunden erstellt und mit talentierten Menschen
+          zusammengearbeitet, um qualitativ hochwertige Webanwendungen zu
+          entwickeln und sie gezielt für Suchmaschinen zu optimieren, um
+          maximale Sichtbarkeit und ein verbessertes Ranking zu gewährleisten.
+          Ich bin ruhig selbstbewusst, von Natur aus neugierig und arbeite
+          ständig daran, meine Fähigkeiten zu verbessern.
+
           Kürzlich habe ich das Webentwicklungsunternehmen{" "}
-          <Link className="underline font-bold" href="https://www.inoweb.pro/">
+          <Link className="underline font-bold" href="https://www.inoweb-agentur.de/">
             INOWEB
           </Link>{" "}
           in Kosovo gegründet, um meine Fähigkeiten und Leidenschaft in einer
-          breiteren Palette von Projekten einzubringen.
+          in einer Vielzahl von Projekten einzubringen.
         </p>
       </div>
     </section>

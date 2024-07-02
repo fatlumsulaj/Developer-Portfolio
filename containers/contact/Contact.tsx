@@ -15,7 +15,7 @@ export default function Contact() {
       <div className="max-w-screen-normal mx-auto flex flex-col lg:flex-row gap-4">
         <div className="w-full lg:w-1/2">
           <h2 className="text-2xl text-black max-w-screen-xl md:text-3xl lg:text-4xl font-bold lg:leading-[48px]">Jetzt<span className="purple-text"> Kontakt</span> aufnehmen</h2>
-          <p className='mt-4 text-[17px] text-neutral-900 max-w-xl'>Bereit für eine Veränderung in Ihrem Unternehmen? Wir sind hier, um Ihre Ideen Wirklichkeit werden zu lassen! Lassen Sie uns in einem unverbindlichen Gespräch darüber sprechen, wie wir gemeinsam etwas Großartiges erreichen können.</p>
+          <p className='mt-4 text-[17px] text-neutral-900 max-w-xl'>Bereit für eine Veränderung in Ihrem Unternehmen? Ich sind hier, um Ihre Ideen Wirklichkeit werden zu lassen! Lassen Sie uns in einem unverbindlichen Gespräch darüber sprechen, wie wir gemeinsam etwas Großartiges erreichen können.</p>
           <div className='glass_contact_bg p-8 mt-10 w-full md:w-3/4 border border-solid border-neutral-400'>
             <div className="flex items-center gap-6">
 

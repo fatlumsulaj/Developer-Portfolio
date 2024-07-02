@@ -5,7 +5,7 @@ import { Poppins } from "next/font/google";
 const Hero = () => {
   return (
     <section className={`max-container padding-container flex flex-col items-center text-center ${nunito.className}`}>
-      <h1 className="heading1 pt-6 lg:pt-10">Web Entwickler, Designer & SEO Expert</h1>
+      <h1 className="heading1 pt-6 lg:pt-10">Web Entwickler, Designer & SEO Experte</h1>
       <p className="paragraph px-2 pt-2">
         Ich liebe es, beeindruckende Websites zu erstellen, die Unternehmen
         dabei helfen, ihre Ziele zu erreichen.
