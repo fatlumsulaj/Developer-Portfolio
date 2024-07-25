@@ -37,7 +37,7 @@ const Skills = () => {
           </p>
           <p className="paragraph-sm">
             HTML, CSS, Tailwind, SASS, Bootstrap, Javasript, React, Next JS,
-            Typesript, Sanity CMS
+            Typesript, SQL, Sanity CMS
           </p>
           <p className="paragraph-sm purple-text font-semibold pt-12 pb-1">
             Dev Tools
